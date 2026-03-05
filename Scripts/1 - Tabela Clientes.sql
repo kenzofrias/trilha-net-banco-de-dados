@@ -9,6 +9,8 @@ CREATE TABLE [dbo].[Clientes](
 ) ON [PRIMARY]
 GO
 
+SET LANGUAGE 'us_english';
+
 -- Inserção de dados
 INSERT INTO Clientes VALUES ('Ken','Sánchez','email@email.com',0,'Jan  7 2009 12:00AM')
 INSERT INTO Clientes VALUES ('Terri','Duffy','email@email.com',1,'Jan 24 2008 12:00AM')

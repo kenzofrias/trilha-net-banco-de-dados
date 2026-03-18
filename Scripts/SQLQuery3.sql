@@ -30,3 +30,9 @@ ADD DataCadastro DATETIME2
 UPDATE Produtos SET DataCadastro = GETDATE()
 
 SELECT FORMAT(DataCadastro, 'dd/MM/yyy') DATA FROM Produtos
+
+SELECT Tamanho, COUNT(*) Quantidade 
+FROM Produtos
+WHERE Tamanho <> ''
+GROUP BY Tamanho
+ORDER BY Quantidade DESC
